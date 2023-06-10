@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/offwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pojok"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ivback"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang !"
+        android:fontFamily="@font/popinnbold"
+        android:textSize="18sp"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvselamatd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mari buat akun terlebih dahulu"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:layout_below="@+id/tvselamatd"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvbuat"
+        />
+
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvbuat"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukkan nama anda"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et1"
+        />
+
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukkan username anda"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et2"
+        />
+
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et2"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Buat kata sandi"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et3"
+        />
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et3"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Konfirmasi kata sandi"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et4"
+        />
+
+
+    <Button
+        android:id="@+id/btndaftar"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:text="Daftar"
+        android:layout_below="@+id/et4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/popinnbold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btndaftar"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun?"
+            android:fontFamily="@font/popinsemi"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Masuk"
+            android:fontFamily="@font/popinsemi"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/coklat"
+            android:id="@+id/tvmasuk"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

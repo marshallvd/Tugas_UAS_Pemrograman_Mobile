@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelloActivity"
+    android:background="@color/offwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pojok"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ivback"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo User"
+        android:fontFamily="@font/popinnbold"
+        android:textSize="18sp"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvselamatd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayo buat dompetmu terlebih dahulu !"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:layout_below="@+id/tvselamatd"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvbuat"
+        />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/wallet"
+        android:layout_below="@+id/tvbuat"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img3"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukkan nama dompet anda"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et1"
+        android:layout_below="@id/img3"
+        />
+
+    <EditText
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:background="@drawable/kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukkan saldo awal"
+        android:fontFamily="@font/popinnreg"
+        android:textSize="12sp"
+        android:id="@+id/et2"
+        />
+
+
+    <Button
+        android:id="@+id/btndaftar"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:text="Buat"
+        android:layout_below="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/popinnbold"
+        />
+
+
+</RelativeLayout>
