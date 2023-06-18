@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalisisActivity"
+    android:background="@color/offwhite">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/header"
+    android:id="@+id/header">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/baseline_menu_24"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/logosimpellet2"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settinng_24"
+                />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>
+
+<LinearLayout
+    android:elevation="9dp"
+    android:layout_below="@+id/header"
+    android:layout_width="300dp"
+    android:layout_height="160dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bgitem"
+    android:layout_marginTop="-170dp"
+    android:id="@+id/dompet"
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Dompet"
+            android:fontFamily="@font/popinnbold"
+            android:textSize="20sp"
+            android:id="@+id/tvnamadompet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisa Saldo"
+            android:fontFamily="@font/popinsemi"
+            android:textSize="12sp"
+            android:layout_below="@+id/tvnamadompet"
+            android:id="@+id/tvsisasaldo"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 1.000.000"
+            android:fontFamily="@font/popinnbold"
+            android:textSize="30sp"
+            android:layout_below="@+id/tvsisasaldo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvnominalsaldo"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="3dp"
+            android:src="@drawable/button_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvnominalsaldo"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="159dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdasar"
+    android:orientation="vertical"
+    android:id="@+id/isi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analisis"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/popinnbold"
+            android:textColor="@color/coklat"
+            android:textSize="25sp"
+            android:id="@+id/tvberanda"/>
+
+        <RelativeLayout
+            android:layout_below="@id/tvberanda"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:background="@drawable/bgitem"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:id="@+id/boxpemasukan"
+            android:layout_marginTop="10dp">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="650dp"
+    android:background="@drawable/navbar"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/analysis" />
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analisis"
+            android:textSize="12sp"
+            android:fontFamily="@font/popinsemi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/homee" />
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beranda"
+            android:textSize="12sp"
+            android:fontFamily="@font/popinsemi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/man"/>
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textSize="12sp"
+            android:fontFamily="@font/popinsemi"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
