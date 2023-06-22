@@ -111,7 +111,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp">
+            android:layout_marginTop="100dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -183,7 +183,7 @@
                 android:layout_centerHorizontal="true"
                 android:padding="15dp"
                 android:id="@+id/boxeditprofil"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="30dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -238,7 +238,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="700dp"
         android:background="@drawable/navbar"
         android:orientation="horizontal"
         >
@@ -256,6 +256,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/ivanalisis"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -284,6 +285,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/ivberanda"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -312,6 +314,7 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/ivprofil"
                     android:layout_margin="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
