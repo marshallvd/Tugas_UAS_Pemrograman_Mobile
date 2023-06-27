@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.RelativeLayout
 
 class ProfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,12 @@ class ProfilActivity : AppCompatActivity() {
         var buttonprofil= findViewById<ImageView>(R.id.ivprofil)
         buttonprofil.setOnClickListener{
             val Intent= Intent(this, ProfilActivity::class.java)
+            startActivity(Intent)
+        }
+
+        var buttonlogout= findViewById<RelativeLayout>(R.id.boxlogout)
+        buttonlogout.setOnClickListener{
+            val Intent= Intent(this, MainActivity::class.java)
             startActivity(Intent)
         }
     }
